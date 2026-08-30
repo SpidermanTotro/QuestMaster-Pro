@@ -7,8 +7,6 @@ local settingsCalls = {
     opened = nil,
 }
 
-unpack = unpack or table.unpack
-
 local function newUiObject()
     local object = {
         scripts = {},
