@@ -1,5 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Waypoint System
--- Modern waypoint management superior to competitors
+-- QuestMaster Pro - Waypoint system
 
 AzerothPilot.Guides.Waypoints = {}
 local Waypoints = AzerothPilot.Guides.Waypoints

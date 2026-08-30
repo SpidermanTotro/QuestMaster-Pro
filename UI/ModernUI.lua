@@ -1,5 +1,5 @@
--- Azeroth Pilot Reloaded Pro - STUNNING Modern UI System
--- BETTER looking than Zygor's $120/year interface!
+-- QuestMaster Pro - Modern UI system
+-- Optional modern presentation layer.
 -- Beautiful, Fresh, Outstanding design that makes users PROUD!
 
 AzerothPilot.UI.Modern = {}
@@ -64,7 +64,7 @@ function ModernUI:CreateMainWindow()
     frame:RegisterForDrag("LeftButton")
     frame:SetClampedToScreen(true)
 
-    -- STUNNING Glass-morphism background
+    -- Glass-morphism background
     frame:SetBackdrop({
         bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
         edgeFile = "Interface\\Glues\\Common\\TextPanel-Border",
@@ -94,7 +94,7 @@ function ModernUI:CreateMainWindow()
     header:SetTexture("Interface\\Buttons\\WHITE8X8")
     header:SetVertexColor(0.0, 0.6, 0.9, 0.4)
 
-    -- Logo/Icon (STUNNING)
+    -- Logo and icon
     local logo = frame:CreateTexture(nil, "OVERLAY")
     logo:SetPoint("TOPLEFT", header, "TOPLEFT", 15, -10)
     logo:SetSize(40, 40)
@@ -117,7 +117,7 @@ function ModernUI:CreateMainWindow()
     subtitle:SetText("|cFF888888The Ultimate Free Leveling Guide|r")
     subtitle:SetTextColor(0.8, 0.8, 0.85, 1)
 
-    -- Progress Bar - STUNNING animated progress
+    -- Animated progress bar
     local progressBar = self:CreateProgressBar(frame)
     progressBar:SetPoint("TOP", header, "BOTTOM", 0, -15)
 
@@ -156,7 +156,7 @@ function ModernUI:CreateMainWindow()
     return frame
 end
 
--- Create STUNNING Progress Bar
+-- Create the progress bar
 function ModernUI:CreateProgressBar(parent)
     local container = CreateFrame("Frame", nil, parent, "BackdropTemplate")
     container:SetSize(440, 50)
@@ -499,13 +499,12 @@ function ModernUI:CreateMinimapButton()
     return btn
 end
 
--- Initialize the STUNNING UI
+-- Initialize the modern UI
 function ModernUI:Initialize()
     self:CreateMainWindow()
     self:CreateMinimapButton()
 
-    AzerothPilot:Print("|cFF00D4FFSTUNNING Modern UI loaded!|r")
-    AzerothPilot:Print("|cFFFFD700Interface BETTER than Zygor - 100% FREE!|r")
+    AzerothPilot:Print("|cFF00D4FFModern UI loaded|r")
 end
 
 return ModernUI

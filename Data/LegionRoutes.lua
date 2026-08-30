@@ -1,6 +1,6 @@
--- Azeroth Pilot Reloaded Pro - Legion Routes
+-- QuestMaster Pro - Legion routes
 -- Complete Legion coverage including Legion Remix support
--- Updated for 2025 - Most comprehensive Legion guides available!
+-- Route metadata requires live-client verification before release.
 
 AzerothPilot.Data.Legion = {}
 local Legion = AzerothPilot.Data.Legion
@@ -9,7 +9,7 @@ local Legion = AzerothPilot.Data.Legion
 Legion.BrokenShoreIntroAlliance = {
     id = "legion_intro_alliance",
     name = "Legion: Broken Shore Intro (Alliance)",
-    description = "The Legion invasion begins! Complete coverage ahead of all competitors!",
+    description = "Introductory route through Legion content.",
     faction = "Alliance",
     minLevel = 98,
     maxLevel = 100,
@@ -232,7 +232,7 @@ Legion.Stormheim = {
 Legion.Suramar = {
     id = "legion_suramar_110",
     name = "Suramar 110 (Endgame)",
-    description = "Liberate Suramar from the Legion - COMPLETE coverage!",
+    description = "Route outline for the Suramar campaign.",
     faction = "Neutral",
     minLevel = 110,
     maxLevel = 110,
@@ -366,7 +366,7 @@ function Legion:Initialize()
     AzerothPilot.Database:RegisterGuide(self.LegionAssaults)
     AzerothPilot.Database:RegisterGuide(self.Argus)
 
-    AzerothPilot:Print("Legion guides loaded - COMPLETE coverage ahead of competitors!")
+    AzerothPilot:Print("Legion guide catalog loaded")
     AzerothPilot:Print("Including Legion Remix support!")
 end
 

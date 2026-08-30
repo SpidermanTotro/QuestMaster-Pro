@@ -1,20 +1,17 @@
-# Devcontainer for Azeroth Pilot — Lua + luacheck
+# QuestMaster Pro development container
 
-This devcontainer prepares a reproducible Codespaces / devcontainer environment for developing and linting this World of Warcraft addon.
+The development container installs Lua 5.1, LuaRocks, and Luacheck for local validation.
 
-What it installs
-- Lua 5.1
-- luarocks
-- luacheck (via luarocks)
+## Use
 
-How to use
-1. Open this repository in Codespaces or VS Code and choose "Reopen in Container".
-2. After the container builds, run the task "Run luacheck (full)" from the Command Palette / Tasks to lint the repo.
-3. Optionally run `./scripts/run-luacheck.sh` in the terminal.
+1. Open the repository in a compatible Codespaces or devcontainer environment.
+2. Reopen the project in the container.
+3. Run:
 
-Developer hooks
-- `scripts/pre-commit.sh` is provided; to enable it as a Git hook:
+   ```bash
+   ./scripts/run-luacheck.sh
+   ```
 
-  cp scripts/pre-commit.sh .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+The GitHub Actions workflow additionally checks Lua syntax, TOC manifests, and offline addon startup.
 
-This is intentionally opt-in.
+The optional pre-commit helper is available at `scripts/pre-commit.sh`; review it before copying it into `.git/hooks/`.

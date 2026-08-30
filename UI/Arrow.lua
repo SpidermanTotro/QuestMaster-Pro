@@ -1,5 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Navigation Arrow
--- Advanced waypoint arrow system - superior to competitors
+-- QuestMaster Pro - Navigation arrow
 
 AzerothPilot.UI.Arrow = {}
 local Arrow = AzerothPilot.UI.Arrow

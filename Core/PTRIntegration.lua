@@ -1,6 +1,6 @@
--- Azeroth Pilot Reloaded Pro - PTR Integration & Auto-Update System
+-- QuestMaster Pro - PTR integration and data-capture helpers
 -- Automatically absorb latest quests from PTR and trusted sources
--- REVOLUTIONARY: Stay ahead of ALL competitors!
+-- Captured data must be reviewed before it is promoted into release catalogs.
 
 AzerothPilot.PTR = {}
 local PTR = AzerothPilot.PTR

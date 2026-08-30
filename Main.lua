@@ -1,5 +1,5 @@
--- Azeroth Pilot Reloaded Pro - Main Entry Point
--- The superior alternative to AAP, Zygor, RestedXP, and Dugi Guides!
+-- QuestMaster Pro - Main entry point
+-- Legacy Azeroth Pilot command aliases remain available for compatibility.
 
 -- Slash command handlers
 SLASH_AZEROTHPILOT1 = "/ap"
@@ -81,12 +81,12 @@ function SlashCmdList.QUESTMASTER(msg)
         print("|cFF00D4FF║|r  |cFF00D4FFQuest|r|cFFFFD700Master Pro|r v" .. AzerothPilot.Version .. "  |cFF00D4FF║|r")
         print("|cFF00D4FF╚════════════════════════════════════════════╝|r")
         print(" ")
-        print("|cFF00FF00CRUSHING THE COMPETITION:|r")
-        print("  vs Zygor: Better UI, FREE (save $120/yr)")
-        print("  vs RestedXP: More features, no paywall")
-        print("  vs Dugi: More reliable, open source")
+        print("|cFF00FF00Available systems:|r")
+        print("  Guide engine and waypoint navigation")
+        print("  Patch-aware content catalogs")
+        print("  Optional travel, gear, notification, and XP tools")
         print(" ")
-        print("|cFFFFD700NEW in v" .. AzerothPilot.Version .. ":|r")
+        print("|cFFFFD700Included in v" .. AzerothPilot.Version .. ":|r")
         print("  ✓ Auto Hearth Optimizer")
         print("  ✓ Smart Quest Skip Logic")
         print("  ✓ Intelligent Notifications")
@@ -102,7 +102,7 @@ end
 
 -- Show help text
 function AzerothPilot:ShowHelp()
-    self:Print("=== Azeroth Pilot Reloaded Pro Commands ===")
+    self:Print("=== QuestMaster Pro Commands ===")
     print("|cFFFFFF00/ap help|r - Show this help")
     print("|cFFFFFF00/ap start [guide]|r - Start a leveling guide")
     print("|cFFFFFF00/ap stop|r - Stop current guide")
@@ -171,9 +171,9 @@ end
 function AzerothPilot:OpenSettings()
     -- Open interface options to our panel
     if Settings and Settings.OpenToCategory then
-        Settings.OpenToCategory("Azeroth Pilot Pro")
+        Settings.OpenToCategory("QuestMaster Pro")
     elseif InterfaceOptionsFrame_OpenToCategory then
-        InterfaceOptionsFrame_OpenToCategory("Azeroth Pilot Pro")
+        InterfaceOptionsFrame_OpenToCategory("QuestMaster Pro")
     end
 end
 
@@ -192,18 +192,11 @@ end
 
 -- Show version
 function AzerothPilot:ShowVersion()
-    self:Print("=== Azeroth Pilot Reloaded Pro ===")
+    self:Print("=== QuestMaster Pro ===")
     self:Print("Version: " .. self.Version)
     self:Print("Build Date: " .. self.BuildDate)
     self:Print(" ")
-    self:Print("|cFF00FF00The SUPERIOR alternative to:|r")
-    self:Print("  - Azeroth Auto Pilot (deprecated)")
-    self:Print("  - Zygor Guides (slow updates)")
-    self:Print("  - RestedXP (limited features)")
-    self:Print("  - Dugi Guides (paid only)")
-    self:Print(" ")
-    self:Print("|cFFFFFF00Current patch support!|r")
-    self:Print("Including Pandaria Classic guides!")
+    self:Print("|cFFFFFF00Patch-aware guide framework with Retail and Classic metadata.|r")
 end
 
 -- Initialize all systems when player logs in
@@ -230,10 +223,10 @@ function AzerothPilot:OnPlayerLogin()
     -- Initialize PTR Integration
     AzerothPilot.PTR:Initialize()
 
-    -- Initialize STUNNING Modern UI
+    -- Initialize the modern UI
     AzerothPilot.UI.Modern:Initialize()
 
-    -- Initialize NEW GAME-CHANGING Features!
+    -- Initialize optional feature modules
     if QuestMasterPro.Travel then QuestMasterPro.Travel:Initialize() end
     if QuestMasterPro.QuestSkip then QuestMasterPro.QuestSkip:Initialize() end
     if QuestMasterPro.Notifications then QuestMasterPro.Notifications:Initialize() end
@@ -245,14 +238,10 @@ function AzerothPilot:OnPlayerLogin()
     self:Print("║  |cFF00D4FFQuest|r|cFFFFD700Master Pro|r v" .. self.Version .. "  ║")
     self:Print("╚════════════════════════════════════════════╝")
     self:Print(" ")
-    self:Print("|cFF00FF00✓|r STUNNING Modern UI - Better than Zygor!")
-    self:Print("|cFF00FF00✓|r ALL Professions, Achievements, Gold Guides!")
-    self:Print("|cFF00FF00✓|r PTR Integration - Always ahead!")
-    self:Print("|cFF00FF00✓ NEW:|r Auto Hearth Optimizer!")
-    self:Print("|cFF00FF00✓ NEW:|r Smart Quest Skip Logic!")
-    self:Print("|cFF00FF00✓ NEW:|r Gear Upgrade Advisor!")
-    self:Print("|cFF00FF00✓ NEW:|r XP/Min Tracker!")
-    self:Print("|cFF00FF00✓|r 100% FREE - Save $120/year!")
+    self:Print("|cFF00FF00✓|r Guide engine and waypoint navigation ready")
+    self:Print("|cFF00FF00✓|r Patch compatibility and content catalogs loaded")
+    self:Print("|cFF00FF00✓|r Travel, quest analysis, gear, notification, and XP tools loaded")
+    self:Print("|cFF00FF00✓|r Free and open source under GPL-3.0")
     self:Print(" ")
     self:Print("Type |cFFFFD700/qmp|r for commands  |  |cFFFFD700/xptrack toggle|r for XP tracker!")
 

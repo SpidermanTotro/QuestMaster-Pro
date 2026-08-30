@@ -1,6 +1,6 @@
--- Azeroth Pilot Reloaded Pro - ULTIMATE COMPLETE ZONE DATABASE
+-- QuestMaster Pro - Extended zone database
 -- EVERY zone in WoW history - ALL expansions!
--- MORE complete than ANY competitor - Zygor, RestedXP, Dugi CRUSHED!
+-- Coverage metadata should be checked against supported live clients.
 
 AzerothPilot.Data.CompleteZones = {}
 local Zones = AzerothPilot.Data.CompleteZones
@@ -251,7 +251,7 @@ Zones.Cataclysm = {
 }
 
 -- ========================================
--- MISTS OF PANDARIA (85-90) - FRESH 2025!
+-- Mists of Pandaria (85-90)
 -- ========================================
 
 Zones.Pandaria = {

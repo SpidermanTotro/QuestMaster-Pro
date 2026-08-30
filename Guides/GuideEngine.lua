@@ -1,5 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Guide Engine
--- Advanced guide system with modern features that surpass competitors
+-- QuestMaster Pro - Guide engine
 
 AzerothPilot.Guides.Engine = {}
 local Engine = AzerothPilot.Guides.Engine

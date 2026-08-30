@@ -1,5 +1,5 @@
--- Azeroth Pilot Reloaded Pro - Mythic+ & Endgame Content Guides
--- COMPLETE M+ guide system - Better than ANY competitor!
+-- QuestMaster Pro - Mythic+ and endgame guide catalog
+-- Strategies require review when dungeons, seasons, or affixes change.
 -- Dungeon routes, affixes, strategies, rewards!
 
 AzerothPilot.Data.MythicPlus = {}

@@ -1,6 +1,6 @@
--- Azeroth Pilot Reloaded Pro - COMPLETE Class & Gear Guide
+-- QuestMaster Pro - Class and gear guide catalog
 -- ALL 13 classes! ALL specs! Gear recommendations! Talents! Rotations!
--- MORE detailed than Zygor - 100% FREE!
+-- Recommendations require review when class balance changes.
 
 AzerothPilot.Data.Classes = {}
 local Classes = AzerothPilot.Data.Classes

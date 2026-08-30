@@ -1,6 +1,5 @@
--- Azeroth Pilot Reloaded Pro - COMPLETE Profession Guides
--- ALL professions, ALL expansions, BETTER than Zygor!
--- 100% FREE - No $120/year subscription needed!
+-- QuestMaster Pro - Profession guide catalog
+-- Costs and recipes require live-client verification.
 
 AzerothPilot.Data.Professions = {}
 local Profs = AzerothPilot.Data.Professions
@@ -190,12 +189,12 @@ Profs.AllProfessions = {
 }
 
 -- COMPLETE Leveling Guides (1-800 for each profession)
--- These destroy Zygor's profession guides because they're FREE!
+-- Example leveling paths; recipes, costs, and skill ranges may change.
 
 Profs.AlchemyGuide = {
     id = "alchemy_1_800",
     name = "Alchemy 1-800 (Complete Guide)",
-    description = "BETTER than Zygor - 100% FREE! Most cost-efficient alchemy leveling path",
+    description = "Example cost-conscious alchemy leveling path.",
     profession = "Alchemy",
     minSkill = 1,
     maxSkill = 800,
@@ -301,17 +300,17 @@ Profs.AlchemyGuide = {
     }
 }
 
--- Blacksmithing Complete Guide (Destroys Zygor's paid guide!)
+-- Blacksmithing guide
 Profs.BlacksmithingGuide = {
     id = "blacksmithing_1_800",
-    name = "Blacksmithing 1-800 (Ultimate Free Guide)",
-    description = "Complete blacksmithing guide - NO $120/year subscription needed!",
+    name = "Blacksmithing 1-800 Guide",
+    description = "Example blacksmithing leveling path.",
     profession = "Blacksmithing",
     minSkill = 1,
     maxSkill = 800,
     goldCost = 8000,
     timeCost = "4-5 hours",
-    author = "APR Pro Team",
+    author = "QuestMaster Pro Team",
 
     phases = {
         {
@@ -352,7 +351,7 @@ Profs.BlacksmithingGuide = {
 Profs.EngineeringGuide = {
     id = "engineering_1_800",
     name = "Engineering 1-800 (Gadget Master Guide)",
-    description = "Most FUN profession guide - Better than Zygor, 100% FREE!",
+    description = "Example engineering leveling path.",
     profession = "Engineering",
     minSkill = 1,
     maxSkill = 800,
@@ -397,8 +396,7 @@ function Profs:Initialize()
     AzerothPilot.Database:RegisterGuide(self.BlacksmithingGuide)
     AzerothPilot.Database:RegisterGuide(self.EngineeringGuide)
 
-    AzerothPilot:Print("Profession guides loaded - BETTER than Zygor, 100% FREE!")
-    AzerothPilot:Print("Save $120/year - Get the same quality for $0!")
+    AzerothPilot:Print("Profession guide catalog loaded")
 end
 
 return Profs

@@ -1,5 +1,5 @@
--- Azeroth Pilot Reloaded Pro - Quest Database
--- Modern quest tracking database - updated faster than competitors!
+-- QuestMaster Pro - Quest database
+-- Quest records should be checked against the live client.
 
 AzerothPilot.Data.Quests = {}
 local Quests = AzerothPilot.Data.Quests
@@ -67,7 +67,7 @@ Quests:Register({
     coordinates = { x = 0.44, y = 0.69 }
 })
 
--- Pandaria Quests (FRESH - 2025!)
+-- Pandaria quests
 Quests:Register({
     id = 29548,
     name = "The King's Command",

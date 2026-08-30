@@ -1,11 +1,11 @@
 -- EnhancedModernUI.lua - Premium Visual Upgrade for QuestMaster Pro
--- STUNNING 2025 design that CRUSHES Zygor's outdated 2015 interface!
+-- Optional enhanced presentation helpers.
 
 local QMP = QuestMasterPro
 QMP.UI = QMP.UI or {}
 QMP.UI.Enhanced = {}
 
--- Premium Color Palette (Better than Zygor's boring brown/grey!)
+-- Color palette
 QMP.UI.Enhanced.Colors = {
     -- Primary Colors
     primary = {r = 0.2, g = 0.4, b = 0.8, a = 1.0},      -- Deep blue
@@ -29,7 +29,7 @@ QMP.UI.Enhanced.Colors = {
     textMuted = {r = 0.5, g = 0.5, b = 0.6, a = 1.0},
 }
 
--- Animation System (Zygor has ZERO animations!)
+-- Animation system
 QMP.UI.Enhanced.Animations = {
     fadeIn = function(frame, duration)
         frame:SetAlpha(0)
@@ -112,7 +112,7 @@ QMP.UI.Enhanced.Animations = {
     end
 }
 
--- Premium Circular XP Tracker (WAY better than Zygor's basic bar!)
+-- Circular XP tracker
 function QMP.UI.Enhanced:CreateCircularXPTracker()
     local frame = CreateFrame("Frame", "QMP_CircularXPTracker", UIParent)
     frame:SetSize(120, 120)
@@ -241,7 +241,7 @@ function QMP.UI.Enhanced:ShowNotification(message, type, icon, duration)
     return frame
 end
 
--- Enhanced Arrow with Glow (Better than basic Zygor arrow!)
+-- Enhanced arrow with glow
 function QMP.UI.Enhanced:CreateEnhancedArrow()
     local frame = CreateFrame("Frame", "QMP_EnhancedArrow", UIParent)
     frame:SetSize(64, 64)
@@ -356,7 +356,7 @@ end
 
 -- Initialize Enhanced UI
 function QMP.UI.Enhanced:Init()
-    print("|cff4080ff[QuestMaster Pro]|r Enhanced UI loaded! Zygor can't compete with this! 😎")
+    print("|cff4080ff[QuestMaster Pro]|r Enhanced UI loaded")
 
     -- Create all enhanced elements
     self:CreateCircularXPTracker()
@@ -366,7 +366,7 @@ function QMP.UI.Enhanced:Init()
     -- Show welcome notification
     C_Timer.After(2, function()
         self:ShowNotification(
-            "QuestMaster Pro loaded! Better UI than $120/year Zygor - 100% FREE!",
+            "QuestMaster Pro enhanced UI is ready.",
             "success",
             "Interface\\Icons\\Achievement_Boss_Ragnaros"
         )
