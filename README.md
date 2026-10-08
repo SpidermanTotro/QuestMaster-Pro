@@ -1,4 +1,8 @@
+<p align="center"><img src="assets/questmaster-pro-lockup.svg" alt="QuestMaster Pro — Find Your Next Quest" width="860" /></p>
+
 # QuestMaster Pro
+
+[Brand assets and repository rename guide](BRANDING.md)
 
 QuestMaster Pro is an open-source World of Warcraft questing and guide addon. The project is under active development and currently focuses on safe startup, patch compatibility, guide infrastructure, navigation, and testable UI behavior.
 
