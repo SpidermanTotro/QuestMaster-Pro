@@ -1,4 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Database Management
+-- QuestMaster Pro - Database management
 -- Handles guide data and quest information
 
 AzerothPilot.Database = {}

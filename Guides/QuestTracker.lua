@@ -1,5 +1,5 @@
--- Azeroth Pilot Reloaded Pro - Quest Tracker
--- Advanced quest tracking that outperforms AAP and Zygor
+-- QuestMaster Pro - Quest tracker
+-- Quest-state tracking and objective updates
 
 AzerothPilot.Guides.QuestTracker = {}
 local QuestTracker = AzerothPilot.Guides.QuestTracker

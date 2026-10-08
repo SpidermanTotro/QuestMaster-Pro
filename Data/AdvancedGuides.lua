@@ -1,16 +1,15 @@
--- Azeroth Pilot Reloaded Pro - Achievement, Gold-Making & Pet Battle Guides
--- COMPLETE coverage that DESTROYS Zygor's $120/year subscription!
--- Everything they have, but BETTER and FREE!
+-- QuestMaster Pro - Achievement, gold-making, and pet battle guide catalogs
+-- Values and strategies require live-client verification before release.
 
 AzerothPilot.Data.Achievements = {}
 local Achieve = AzerothPilot.Data.Achievements
 
--- ACHIEVEMENT GUIDES - Complete like Zygor but FREE!
+-- Achievement guides
 
 Achieve.Loremaster = {
     id = "achievement_loremaster",
     name = "Loremaster Achievement Guide",
-    description = "Complete ALL zone storylines - FREE guide beats Zygor!",
+    description = "Plan progress across the zone-story achievements in this catalog.",
     achievementID = 7520,
     points = 50,
     title = "Loremaster",
@@ -33,7 +32,7 @@ Achieve.Loremaster = {
     },
 
     tips = {
-        "Use APR Pro's auto-routing for most efficient path!",
+        "Use QuestMaster Pro routes where live-client validation is available",
         "Complete zones while leveling alts",
         "Some quests are faction-specific",
         "Check Wowhead for removed quests",
@@ -50,7 +49,7 @@ Achieve.Loremaster = {
 Achieve.Exalted = {
     id = "achievement_100_exalted",
     name = "100 Exalted Reputations",
-    description = "Reach Exalted with 100 factions - Complete FREE guide!",
+    description = "Plan reputation progress toward the achievement.",
     achievementID = 6826,
     points = 25,
     difficulty = "Very Time-Consuming",
@@ -75,15 +74,15 @@ Achieve.Exalted = {
     }
 }
 
--- GOLD-MAKING GUIDES - Compete with Zygor's paid gold guides!
+-- Gold-making guide catalog
 
 AzerothPilot.Data.GoldMaking = {}
 local Gold = AzerothPilot.Data.GoldMaking
 
 Gold.FastGoldMethods = {
     id = "gold_fast_methods",
-    name = "Fast Gold-Making Methods (10k-50k/hour)",
-    description = "Make MORE gold than Zygor users - and it's FREE!",
+    name = "Gold-Making Method Catalog",
+    description = "Example approaches; returns vary by realm, patch, and market.",
 
     methods = {
         {
@@ -188,8 +187,8 @@ Gold.FastGoldMethods = {
 
 Gold.ProfitableProf = {
     id = "gold_profitable_professions",
-    name = "Most Profitable Professions 2025",
-    description = "Make MILLIONS with the right professions!",
+    name = "Profession Gold-Making Overview",
+    description = "Compare profession-based gold-making approaches.",
 
     rankings = {
         {
@@ -229,15 +228,15 @@ Gold.ProfitableProf = {
     }
 }
 
--- PET BATTLE GUIDES - Complete like Zygor but FREE!
+-- Pet battle guides
 
 AzerothPilot.Data.PetBattles = {}
 local Pets = AzerothPilot.Data.PetBattles
 
 Pets.PowerLeveling = {
     id = "pet_powerleveling",
-    name = "Pet Power-Leveling Guide (1-25 in 30 mins)",
-    description = "Level pets FASTER than Zygor's guide - 100% FREE!",
+    name = "Pet Power-Leveling Guide",
+    description = "Example pet-leveling approaches that require live-client validation.",
 
     methods = {
         {
@@ -285,14 +284,14 @@ Pets.PowerLeveling = {
 
 Pets.Collection = {
     id = "pet_collection_guide",
-    name = "Collect 1500+ Pets Guide",
-    description = "Catch 'em all! More comprehensive than Zygor!",
+    name = "Pet Collection Guide",
+    description = "Starting points for pet collection.",
 
     easyPets = {
-        "World spawns - 500+ pets across Azeroth",
-        "Quest rewards - 100+ free pets",
-        "Achievement rewards - 50+ pets",
-        "Vendor pets - 100+ for gold",
+        "World spawns across Azeroth",
+        "Quest rewards",
+        "Achievement rewards",
+        "Vendor pets",
         "Drop pets - Farm old raids/dungeons"
     },
 
@@ -339,7 +338,7 @@ local Mounts = AzerothPilot.Data.Mounts
 Mounts.RareMounts = {
     id = "mount_farming_guide",
     name = "Rare Mount Farming Guide",
-    description = "Farm 400+ mounts - Complete FREE guide!",
+    description = "Starting points for mount farming.",
 
     soloable = {
         {
@@ -385,15 +384,15 @@ function Achieve:Initialize()
 end
 
 function Gold:Initialize()
-    AzerothPilot:Print("|cFFFFD700Gold-Making Guides Loaded - Make MILLIONS!|r")
+    AzerothPilot:Print("|cFFFFD700Gold-making guide catalog loaded|r")
 end
 
 function Pets:Initialize()
-    AzerothPilot:Print("|cFFFF69B4Pet Battle Guides Loaded - 1500+ pets!|r")
+    AzerothPilot:Print("|cFFFF69B4Pet battle guide catalog loaded|r")
 end
 
 function Mounts:Initialize()
-    AzerothPilot:Print("|cFF9482C9Mount Farming Guides Loaded - 400+ mounts!|r")
+    AzerothPilot:Print("|cFF9482C9Mount farming guide catalog loaded|r")
 end
 
 -- Export

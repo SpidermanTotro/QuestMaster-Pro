@@ -1,4 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Settings Panel
+-- QuestMaster Pro - Settings panel
 -- Configuration interface for the addon
 
 AzerothPilot.UI.Settings = {}
@@ -7,22 +7,22 @@ local SettingsPanel = AzerothPilot.UI.Settings
 -- Create settings panel
 function SettingsPanel:CreatePanel()
     local panel = CreateFrame("Frame", "AzerothPilotSettingsPanel", UIParent)
-    panel.name = "Azeroth Pilot Pro"
+    panel.name = "QuestMaster Pro"
 
     -- Title
     local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     title:SetPoint("TOPLEFT", 16, -16)
-    title:SetText("Azeroth Pilot Reloaded Pro")
+    title:SetText("QuestMaster Pro")
 
     -- Subtitle
     local subtitle = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
     subtitle:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
-    subtitle:SetText("The ultimate leveling guide for World of Warcraft")
+    subtitle:SetText("Questing, navigation, and guide tools for World of Warcraft")
 
     -- Enable addon checkbox
     local enableCheckbox = CreateFrame("CheckButton", "APEnableCheckbox", panel, "InterfaceOptionsCheckButtonTemplate")
     enableCheckbox:SetPoint("TOPLEFT", subtitle, "BOTTOMLEFT", 0, -20)
-    enableCheckbox.Text:SetText("Enable Azeroth Pilot Pro")
+    enableCheckbox.Text:SetText("Enable QuestMaster Pro")
     enableCheckbox:SetChecked(AzerothPilotDB.enabled)
     enableCheckbox:SetScript("OnClick", function(cb)
         AzerothPilotDB.enabled = cb:GetChecked()

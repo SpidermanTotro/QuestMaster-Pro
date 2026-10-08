@@ -1,6 +1,6 @@
--- Azeroth Pilot Reloaded Pro - Zone Data
+-- QuestMaster Pro - Zone data
 -- Comprehensive zone information for all expansions
--- Updated for 2025 - ahead of competitors!
+-- Zone IDs require verification against supported clients.
 
 AzerothPilot.Data.Zones = {}
 local Zones = AzerothPilot.Data.Zones
@@ -60,7 +60,7 @@ Zones.Cataclysm = {
     [1531] = { id = 1531, name = "Twilight Highlands", level = "84-85", continent = "Eastern Kingdoms" },
 }
 
--- Mists of Pandaria Zones (FRESH CONTENT - 2025!)
+-- Mists of Pandaria zones
 Zones.Pandaria = {
     [1504] = { id = 1504, name = "The Jade Forest", level = "80-85", continent = "Pandaria", expansion = "Mists of Pandaria" },
     [1536] = { id = 1536, name = "Valley of the Four Winds", level = "85-86", continent = "Pandaria", expansion = "Mists of Pandaria" },

@@ -1,4 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Core Initialization
+-- QuestMaster Pro - Core initialization
 -- Version: 1.1.0
 
 -- Create global addon namespace
@@ -36,8 +36,7 @@ function AzerothPilot:Initialize()
         return
     end
 
-    self:Print("Azeroth Pilot Reloaded Pro v" .. self.Version .. " loaded!")
-    self:Print("The ultimate leveling guide - ahead of the game for 2025!")
+    self:Print("QuestMaster Pro v" .. self.Version .. " loaded")
 
     -- Initialize database
     if not AzerothPilotDB then
@@ -81,7 +80,7 @@ end
 -- Debug print function
 function AzerothPilot:DebugPrint(msg)
     if self.Debug then
-        print("|cFFFF8800[AP Debug]|r " .. tostring(msg))
+        print("|cFFFF8800[QMP Debug]|r " .. tostring(msg))
     end
 end
 

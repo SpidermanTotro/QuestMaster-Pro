@@ -1,6 +1,5 @@
--- Azeroth Pilot Reloaded Pro - Leveling Routes
--- Optimized leveling paths that surpass all competitors
--- FRESH UPDATES for 2025 including Pandaria Classic!
+-- QuestMaster Pro - Leveling routes
+-- Route efficiency and quest availability require live-client verification.
 
 AzerothPilot.Data.Routes = {}
 local Routes = AzerothPilot.Data.Routes
@@ -14,7 +13,7 @@ Routes.ElwynnForest = {
     minLevel = 1,
     maxLevel = 10,
     zone = 1429,
-    author = "Azeroth Pilot Pro Team",
+    author = "QuestMaster Pro Team",
     version = "1.0.0",
     lastUpdated = "2025-11-09",
 
@@ -56,7 +55,7 @@ Routes.Durotar = {
     minLevel = 1,
     maxLevel = 10,
     zone = 1411,
-    author = "Azeroth Pilot Pro Team",
+    author = "QuestMaster Pro Team",
     version = "1.0.0",
     lastUpdated = "2025-11-09",
 
@@ -85,12 +84,12 @@ Routes.Durotar = {
 Routes.JadeForest = {
     id = "jade_forest_80_85",
     name = "The Jade Forest 80-85",
-    description = "FRESH 2025! Optimized Pandaria leveling - Updated faster than Zygor, RestedXP, and Dugi!",
+    description = "Example Pandaria leveling route.",
     faction = "Neutral",
     minLevel = 80,
     maxLevel = 85,
     zone = 1504,
-    author = "Azeroth Pilot Pro Team",
+    author = "QuestMaster Pro Team",
     version = "1.0.0",
     lastUpdated = "2025-11-09",
     expansion = "Pandaria",
@@ -168,7 +167,7 @@ function Routes:Initialize()
     AzerothPilot.Database:RegisterGuide(self.JadeForest)
 
     AzerothPilot:Print("Loaded " .. self:GetGuideCount() .. " leveling guides")
-    AzerothPilot:Print("Including FRESH Pandaria Classic guides - updated for 2025!")
+    AzerothPilot:Print("Pandaria guide catalog loaded")
 end
 
 -- Get guide count

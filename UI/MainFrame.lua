@@ -1,5 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Main Frame UI Logic
--- Modern UI that surpasses AAP and competitors
+-- QuestMaster Pro - Main frame UI logic
 
 AzerothPilot.UI.MainFrame = {}
 local MainFrame = AzerothPilot.UI.MainFrame
@@ -12,7 +11,7 @@ function MainFrame:OnLoad()
     AzerothPilotMainFrame:RegisterForDrag("LeftButton")
 
     -- Set title
-    AzerothPilotMainFrameTitle:SetText("Azeroth Pilot Pro")
+    AzerothPilotMainFrameTitle:SetText("QuestMaster Pro")
 
     -- Set button texts
     AzerothPilotMainFrameNextButton:SetText("Next >>")

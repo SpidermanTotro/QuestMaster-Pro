@@ -1,6 +1,6 @@
-# Azeroth Pilot Reloaded Pro - Texture Assets
+# QuestMaster Pro texture assets
 
-This directory contains custom textures for the STUNNING Modern UI.
+This directory is reserved for custom UI textures.
 
 ## Required Textures:
 

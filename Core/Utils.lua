@@ -1,4 +1,4 @@
--- Azeroth Pilot Reloaded Pro - Utility Functions
+-- QuestMaster Pro - Utility functions
 -- Common utility functions used throughout the addon
 
 AzerothPilot.Utils = {}

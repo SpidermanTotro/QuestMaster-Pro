@@ -88,7 +88,7 @@ end
 Settings = {
     RegisterCanvasLayoutCategory = function(panel, name)
         assert(panel, "settings panel is required")
-        assert(name == "Azeroth Pilot Pro", "unexpected settings category name")
+        assert(name == "QuestMaster Pro", "unexpected settings category name")
         settingsCalls.canvas = settingsCalls.canvas + 1
         return { id = 1 }
     end,
@@ -211,6 +211,6 @@ assert(settingsCalls.canvas == 1, "retail settings category was not registered")
 assert(settingsCalls.addon == 1, "retail addon settings entry was not registered")
 
 AzerothPilot:OpenSettings()
-assert(settingsCalls.opened == "Azeroth Pilot Pro", "settings category could not be opened")
+assert(settingsCalls.opened == "QuestMaster Pro", "settings category could not be opened")
 
 print(string.format("startup smoke test passed (%d Lua files)", loadedFiles))

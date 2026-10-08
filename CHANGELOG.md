@@ -1,97 +1,44 @@
-# Changelog - Azeroth Pilot Reloaded Pro
+# Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to QuestMaster Pro are documented here.
 
-## [1.0.0] - 2025-11-09
+## Unreleased
+
+### Changed
+
+- Replaced stale project-status and promotional documents with concise maintenance documentation.
+- Standardized user-facing branding on QuestMaster Pro while retaining compatibility identifiers.
+- Replaced promotional runtime text with factual status and feature messages.
+- Updated the validation workflow to the current checkout action and disabled persisted credentials.
+
+### Fixed
+
+- Removed a redundant Lua compatibility assignment that caused Luacheck to fail.
+
+## 1.1.0 - 2026-07-18
 
 ### Added
-- 🎉 Initial release of Azeroth Pilot Reloaded Pro
-- ✨ Complete addon framework with modular architecture
-- ✨ Advanced waypoint arrow with real-time distance tracking
-- ✨ Smart quest tracking and automation system
-- ✨ Beautiful, customizable UI with movable frames
-- ✨ Comprehensive settings panel
-- ✨ Multi-expansion support (Vanilla through The War Within)
-- ✨ **FRESH** Pandaria Classic guides (ahead of competitors!)
-- ✨ Sample leveling routes for Alliance and Horde
-- ✨ Complete slash command system (/ap)
-- ✨ Group questing support with party sync framework
-- ✨ Zone and quest database system
-- ✨ Optional quest automation (auto-accept/turn-in)
-- ✨ Built-in coordinate display
-- ✨ Debug mode for troubleshooting
 
-### Features Overview
-- **Core System**: Initialization, database, utilities
-- **UI System**: Main frame, arrow, settings panel
-- **Guide System**: Engine, quest tracker, waypoints
-- **Data System**: Zones, quests, routes
+- Patch detection for Retail Midnight and supported Classic clients.
+- Verified Midnight zone metadata without speculative IDs or routes.
+- TOC manifest integrity validation.
+- Offline startup simulation for all Lua files in TOC order.
 
-### Known Limitations
-- Sample routes provided (more community routes coming!)
-- Waypoint map pins require WorldMapFrame
-- Custom route creator in development
+### Fixed
 
-### Competitive Advantages
-- FREE and open source (vs Zygor $10/mo, Dugi paid)
-- Faster updates than competitors
-- Modern codebase (WoW Interface 110002+)
-- Community-driven development
-- Day-1 expansion coverage commitment
+- Addon load order and initialization across renamed folders.
+- Shared `AzerothPilot`, `QuestMasterPro`, and `QMP` namespace compatibility.
+- Runtime quest, map, reward, cooldown, UI texture, and XP tracker defects.
+- Retail settings registration shadowed by the addon settings module.
+- Lua 5.1 syntax and Luacheck configuration.
 
-### Technical Details
-- Interface Version: 110002 (The War Within compatible)
-- SavedVariables: AzerothPilotDB, AzerothPilotCharDB
-- Dependencies: None (standalone)
-- File Structure: Modular (Core, UI, Guides, Data)
+## 1.0.0 - 2025-11-09
 
----
+### Added
 
-## Upcoming Features (Roadmap)
+- Initial modular addon structure.
+- Guide engine, quest tracking, waypoint handling, and settings UI.
+- Core data, route, class, profession, Mythic+, achievement, pet, mount, and gold-guide modules.
+- Optional quest automation, debug support, and saved character progress.
 
-### Version 1.1.0 (Planned)
-- [ ] Additional zone routes (10-20, 20-30, etc.)
-- [ ] Enhanced Pandaria coverage (all zones)
-- [ ] TomTom integration (optional)
-- [ ] Route import/export functionality
-- [ ] Better error handling and validation
-- [ ] Performance optimizations
-
-### Version 1.2.0 (Planned)
-- [ ] Custom route creator UI
-- [ ] Achievement tracking integration
-- [ ] Profession leveling guides
-- [ ] Dungeon questing routes
-- [ ] Multi-language support (DE, FR, ES, etc.)
-
-### Version 2.0.0 (Future)
-- [ ] Machine learning route optimization
-- [ ] Real-time crowdsourced route updates
-- [ ] Mobile companion app
-- [ ] Voice navigation (optional)
-- [ ] AR waypoint overlay (experimental)
-
----
-
-## Bug Fixes
-
-None yet - this is the initial release!
-
----
-
-## Community Contributions
-
-We welcome contributions! See CONTRIBUTING.md for guidelines.
-
----
-
-## Comparison with Previous Versions
-
-This is the initial release. Future versions will be compared here.
-
----
-
-**Note**: Version numbers follow [Semantic Versioning](https://semver.org/):
-- MAJOR version for incompatible API changes
-- MINOR version for new functionality (backwards compatible)
-- PATCH version for backwards compatible bug fixes
+Version numbers follow semantic versioning.
