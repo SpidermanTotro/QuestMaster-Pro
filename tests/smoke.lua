@@ -201,7 +201,9 @@ assert(AzerothPilot.EventFrame, "core event frame was not created")
 local onEvent = AzerothPilot.EventFrame:GetScript("OnEvent")
 assert(onEvent, "core event handler was not installed")
 
+assert(AzerothPilot.EventFrame.events.ADDON_LOADED, "ADDON_LOADED was not registered")
 onEvent(AzerothPilot.EventFrame, "ADDON_LOADED", "QuestMasterPro")
+assert(AzerothPilot.EventFrame.events.PLAYER_LOGIN, "PLAYER_LOGIN was not registered")
 onEvent(AzerothPilot.EventFrame, "PLAYER_LOGIN")
 
 assert(AzerothPilot.Initialized, "addon initialization did not complete")
