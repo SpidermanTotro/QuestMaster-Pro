@@ -3,9 +3,8 @@
 ## Identity
 
 - **Product / addon name:** QuestMaster Pro
-- **Current maintained repository:** https://github.com/SpidermanTotro/azeroth-pilot-reloaded-Pro-
-- **Proposed repository name:** `QuestMaster-Pro`
-- **Resulting address after the owner renames it:** `https://github.com/SpidermanTotro/QuestMaster-Pro`
+- **Current maintained repository:** https://github.com/SpidermanTotro/QuestMaster-Pro
+- **Previous repository address:** `SpidermanTotro/azeroth-pilot-reloaded-Pro-`
 - **Not in scope:** `SpidermanTotro/QuestMasterPro` archival/recovery repository; `SpidermanTotro/azeroth-pilot-reloaded` legacy fork; the upstream Azeroth Pilot Reloaded project.
 
 ## Logo
@@ -18,16 +17,11 @@ The QuestMaster Pro mark is an original compass/waypoint emblem. Blue suggests n
 
 The SVG assets are for GitHub and web use. **Do not change `## IconTexture` to an SVG path**: the WoW client requires a supported game texture format. A WoW-compatible texture should be added and smoke-tested on the target client separately.
 
-## GitHub repository rename — manual administrator action
+## Repository rename — already completed
 
-The connector used for this branding work does not expose a repository-rename operation. A repository administrator can complete the actual URL change:
+The maintained GitHub repository is now `SpidermanTotro/QuestMaster-Pro`; do **not** rename it again. Check that older links redirect before relying on them, and gradually update stale `X-Website`, release metadata, CI links and local clones to this canonical URL.
 
-1. Open **Settings → General → Repository name** for `SpidermanTotro/azeroth-pilot-reloaded-Pro-`.
-2. Rename it to **QuestMaster-Pro**.
-3. Confirm that the new URL resolves and that GitHub redirects existing links.
-4. Only then update `## X-Website`, package metadata, CI/release links, and any hard-coded download URLs to the new canonical address. Do not preemptively publish broken links.
-5. Update local clones: `git remote set-url origin https://github.com/SpidermanTotro/QuestMaster-Pro.git`.
-6. Verify `git remote -v`, pull-request base branches, CI status checks, and release artifacts.
+For existing local clones, use `git remote set-url origin https://github.com/SpidermanTotro/QuestMaster-Pro.git`, then verify with `git remote -v`. This does not rename the installed WoW addon folder or modify compatibility identifiers.
 
 ## Compatibility rules
 
