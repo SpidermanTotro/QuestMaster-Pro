@@ -16,7 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Install Lua 5.1 and LuaRocks
         run: |
@@ -54,6 +56,12 @@ jobs:
                   raise SystemExit(f"{manifest}: missing referenced files: {', '.join(missing)}")
               print(f"{manifest}: all referenced files exist")
           PY
+
+      - name: Smoke-test addon startup
+        shell: bash
+        run: |
+          mapfile -t addon_files < <(sed -n '/^[^#].*\.lua$/ { s#\\#/#g; p; }' QuestMasterPro.toc)
+          lua5.1 tests/smoke.lua "${addon_files[@]}"
 
       - name: Install Luacheck
         run: |
