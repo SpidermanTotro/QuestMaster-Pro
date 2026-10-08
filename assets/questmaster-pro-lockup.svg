@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" role="img" aria-label="QuestMaster Pro logo banner">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#142243"/><stop offset="1" stop-color="#080F22"/></linearGradient><linearGradient id="gold" x2="0" y2="1"><stop stop-color="#FFF2BE"/><stop offset="1" stop-color="#E5A638"/></linearGradient></defs>
+<rect width="1200" height="350" rx="40" fill="url(#bg)"/>
+<g transform="translate(35 35) scale(.55)">
+<rect x="12" y="12" width="488" height="488" rx="116" fill="#10254A" stroke="#5879A0" stroke-width="8"/>
+<circle cx="256" cy="256" r="180" fill="none" stroke="#F4CB71" stroke-width="16"/>
+<path d="M256 104v-28M256 408v28M104 256H76M408 256h28" stroke="#F6D67F" stroke-width="12" stroke-linecap="round"/>
+<path d="M256 119 L315 256 256 236 197 256Z" fill="#63D4FF" stroke="#E0F9FF" stroke-width="6"/>
+<path d="M256 393 L315 256 256 277 197 256Z" fill="#F6CA68" stroke="#FFE4A4" stroke-width="6"/>
+<circle cx="256" cy="256" r="25" fill="#10254A" stroke="#FFE7A2" stroke-width="8"/>
+<path d="M354 156 l8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8z" fill="#FFE49A"/>
+</g>
+<text x="344" y="164" fill="#ECF8FF" font-family="DejaVu Sans,Arial,sans-serif" font-size="78" font-weight="bold" letter-spacing="-2">QUESTMASTER</text>
+<text x="350" y="239" fill="url(#gold)" font-family="DejaVu Sans,Arial,sans-serif" font-size="69" font-weight="bold" letter-spacing="18">PRO</text>
+<path d="M344 274 H1080" stroke="#5084A2" stroke-width="2" opacity=".65"/>
+<text x="348" y="314" fill="#A4BED6" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" letter-spacing="2">FIND YOUR NEXT QUEST</text>
+</svg>
